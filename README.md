@@ -1,1 +1,1 @@
-#Personal project site hosted on github
+## Personal Blog hosted on github
