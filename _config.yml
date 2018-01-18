@@ -25,11 +25,15 @@ github_username:  jningtho
 # Build settings
 markdown: kramdown
 theme: minima
+
 #source:      _source
 destination: _deploy
 plugins:
   - jekyll-feed
-
+  - jekyll-paginate
+  - jekyll-avatar
+  - jemoji
+  
 #pagination:
 pagination: 5
 paginate_path: "/blog/page:num/"
