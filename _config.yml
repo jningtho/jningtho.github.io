@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: '{ jningtho: my DevOps Journal }'
+title: '{ jningtho: //my DevOps Journal }'
 email: jningtho@x-designs.net
 description: >- # this means to ignore newlines until "baseurl:"
   Personal journal on my trysts with use cases on Cloud and DevOps.
@@ -35,7 +35,7 @@ plugins:
   - jemoji
 
 #pagination:
-pagination: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
 
 
@@ -50,3 +50,8 @@ paginate_path: "/blog/page:num/"
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# disqus
+disqus:
+  name: "jningtho"
+  # noscript: "Your noscript tag message." #optional
