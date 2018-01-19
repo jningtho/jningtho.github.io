@@ -11,21 +11,26 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
+        <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        <div class="post-categories">
+            {% if post %}
+              {% assign categories = post.categories %}
+            {% else %}
+              {% assign categories = page.categories %}
+            {% endif %}
+            {% for category in categories %}
+            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}
+          </div>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
         <div class="content">
           {{ post.excerpt }}
         </div>
-        <div>
-            {% if post.tags.size > 0 %}
-            Tag{% if post.tags.size > 1 %}s{% endif %}:
-            <a href="{{ post.url | relative_url }}">{{ post.tags | sort | join: ", " }}</a>
-            {% endif %}
-        </div>        
+        <hr color="gray" size="1px">    
       </li>
     {% endfor %}
   </ul>
@@ -41,20 +46,7 @@ layout: default
         </div>
         {% endfor %}
 
-        <!-- Pagination links -->
-        <div class="pagination">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-        {% else %}
-          <span class="previous">Previous</span>
-        {% endif %}
-        <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-        {% else %}
-          <span class="next ">Next</span>
-        {% endif %}
-        </div>
+        
 
   <!-- feed       
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
