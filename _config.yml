@@ -27,7 +27,7 @@ markdown: kramdown
 theme: minima
 
 #source:      _source
-destination: _deploy
+#destination: _deploy
 plugins:
   - jekyll-feed
   - jekyll-paginate
