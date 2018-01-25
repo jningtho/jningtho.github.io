@@ -4,6 +4,17 @@ title:  "Configuring and Installing gcloud SDK"
 date:   2017-04-19 13:12:08 +0530
 categories: gcp
 ---
+
+### CLI Tool to manage Products and Services on Google Cloud
+
+The gCloud SDK is a set of tools required to manages Google Products and Services via command-line and contains the following.
+* gcloud - access and manage virtual machines on Compute Engine, right from creating, starting, managing instances and decommisioning via the command line. It is used to manage `authentication`, `configuration`, `interactions with the Cloud Platform APIs` and `connect to the virtual instances via SSH`.
+
+* gsutil - provides CLI access and manage `Google Cloud Storage`, `buckets` and `objects`.
+
+* bq - allows to manage and `run queries`, `manipulate datasets`, `tables` and `entities` in BigQuery.
+
+You can run these tools interactively or in your automated scripts.
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
