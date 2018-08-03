@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Configuring and Installing gcloud SDK"
-date:   2017-04-19 13:12:08 +0530
+date:   2017-04-10 13:12:08 +0530
 categories: gcp
 ---
 
