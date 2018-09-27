@@ -54,7 +54,7 @@ Another easy method is installing via `[Homebrew]`(https://brew.sh/) also known 
 ## ubuntu
 The installation method on Ubuntu is more or less similar except it uses `apt` package manager tool for [Ubuntu](https://help.ubuntu.com/lts/serverguide/apt.html.en). Similar fashion, install Python if not already installed.
 
-1.Install `[Python 3 +]`(https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html)
+1.Install `[Python 3 +](https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html)``
 
 2.Install `pip`
 ```shell
@@ -74,7 +74,7 @@ $ aws --version
 aws-cli/1.11.84 Python/3.6.2 Linux/4.4.0-59-generic botocore/1.5.47
 ```
 
-Simple wasn't it? If in doubt to modify your path variable, please refer '[aws documentation]'(https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html#awscli-install-linux-pip)
+Simple wasn't it? If in doubt to modify your path variable, please refer `[aws documentation](https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html#awscli-install-linux-pip)``
 
 
 Voila! You are now ready to configure your AWS  Profile using the Secret Key and Secret Access ID.
