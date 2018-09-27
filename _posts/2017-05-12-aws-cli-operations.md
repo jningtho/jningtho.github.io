@@ -1,15 +1,20 @@
 ---
 layout: post
 title:  "AWS CLI Operations"
-date:   2017-04-19 13:12:08 +0530
-categories: aws
+date:   2017-04-22 17:12:08 +0530
+categories: aws awscli
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+So I have installed `awscli` tool on my macbook or ubuntu. Now what? Where do I go from here. If you've reached this far I'd be wrong to say that you have not created a [FREE TIER](https://aws.amazon.com/free/) account in AWS and are anxious to hop on the bandwagon. Say no more!
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+### Checklist
+* You have created a FREE TIER account in aws
+* You have logged in as the root user
+* You have also created a _new user_ and have attached _AdministratorAccess policy_.
 
-Jekyll also offers powerful support for code snippets:
+NOTE: Please make sure to follow _IAM Best Practices_. You may see the [aws  documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#create-iam-users).
+
+
 
 {% highlight ruby %}
 def print_hi(name)
@@ -18,9 +23,3 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
