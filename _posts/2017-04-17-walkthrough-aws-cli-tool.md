@@ -48,4 +48,33 @@ $ aws --version
 aws-cli/1.16.20 Python/3.7.0 Darwin/17.7.0 botocore/1.12.10 #=>output.
 ```
 
-Voila! You are ready to configure your AWS  Profile using the Secret Key and Secret Access ID.
+Another easy method is installing via `[Homebrew]`(https://brew.sh/) also known as the 'Missing Package Manager for macOS'. You may refer the step-by-step walkthrough [here](http://certglobal.com/aws-cli-tools-1/)
+
+
+## ubuntu
+The installation method on Ubuntu is more or less similar except it uses `apt` package manager tool for [Ubuntu](https://help.ubuntu.com/lts/serverguide/apt.html.en). Similar fashion, install Python if not already installed.
+
+1.Install `[Python 3 +]`(https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html)
+
+2.Install `pip`
+```shell
+$ curl -O https://bootstrap.pypa.io/get-pip.py
+$ python get-pip.py --user
+```
+3.Install latest version of `awscli`
+```shell
+$ pip install awscli --upgrade --user
+```
+
+To upgrade to the latest version, run the installation command again, run the same command as step 3
+
+Confirm `awscli` installed successfully
+```shell
+$ aws --version
+aws-cli/1.11.84 Python/3.6.2 Linux/4.4.0-59-generic botocore/1.5.47
+```
+
+Simple wasn't it? If in doubt to modify your path variable, please refer '[aws documentation]'(https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html#awscli-install-linux-pip)
+
+
+Voila! You are now ready to configure your AWS  Profile using the Secret Key and Secret Access ID.
