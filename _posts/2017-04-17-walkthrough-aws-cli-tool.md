@@ -13,8 +13,7 @@ The primary distribution method for the AWS CLI on Linux, Windows, and macOS is 
 * Python 2 version 2.6.5+ or Python 3 version 3.3+
 * `pip` Python package manager
 
-## MAC
-Insatalling in 3 simple steps
+## macOS Installing `awscli tool` in 3 simple steps.
 
 1.The latest version of Mac OS X, High Sierra, comes with Python 2.7 out of the box. Perhaps [this document](https://docs.python-guide.org/starting/install/osx/) can give you a granular detail. Check for python version in the terminal and the output should be something like below.
 
