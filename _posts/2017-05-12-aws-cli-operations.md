@@ -44,7 +44,52 @@ Default output format [json]: <leave this blank, will default to json>
 ```
 
 Once completed, you should be able to see a hidden folder `~/.aws` within your user profile in your machine with 2 files.
-* config - will have the profile (or different profile) information with the region and the output format as defined when the profile was configured.
+* config - will have the profile (or different profiles) information with the region and the output format as defined when the profile was configured.
 * credentials - will have the profile information, Access Key Id and the secret Access key.
 
 NOTE: It is extremely imperative that these information are kept in a safe location away from prying eyes. If someone should accidentally get hold of your Administrative access to your AWS account, perhaps you might be aware that a million  dollar company got shut down overnight. Please google up for information.
+
+
+#### Configure environment variable for an authenticated user (temporary)
+Here's another method to allow temporary CLI access to your account.
+
+```shell
+$ export AWS_ACCESS_KEY_keyID
+$ export AWS_SECRET_KEY_key
+```
+
+#### Testing if the CLI authentication works with a simple command
+
+```shell
+$ aws ec2 describe-instances --region us-east-1
+```
+#### Revoming access to environment variables
+
+```shell
+$ unset AWS_ACCESS_KEY_keyID
+$ unset AWS_SECRET_KEY_key
+```
+
+#### List current configured profile
+
+List the AWS CLI current configuration data. This command will show you the current configuration data. For each configuration item, it will show you the value, where the configuration value was retrieved, and the configuration variable name. For example, if you provide the AWS region in an environment variable, this command will show you the name of the region you've configured, it will tell you that this value came from an environment variable, and it will tell you the name of the environment variable.
+
+```shell
+$ aws configure list
+Name                    Value             Type    Location
+    ----                    -----             ----    --------
+ profile                <not set>             None    None
+access_key     ****************35LQ shared-credentials-file    
+secret_key     ****************ddwk shared-credentials-file    
+  region               ap-south-1      config-file    ~/.aws/config
+```
+
+#### Review your configuration for a specific profile?
+
+```shell
+$ aws configure list --profile profile-name
+```
+
+You should now be confident and ready to venture out into the `awscli` world on your own. It is important that you familiarize yourself with the services and the arguments required for different tasks and activity. AWS has provided a very well documented and elaborate `user reference guide` [here](https://docs.aws.amazon.com/cli/latest/reference/).
+
+Happy Learning and stay cool!
