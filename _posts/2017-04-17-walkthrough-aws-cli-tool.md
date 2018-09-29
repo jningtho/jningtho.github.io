@@ -78,3 +78,5 @@ Simple wasn't it? If in doubt about modifying your path variable, please refer [
 
 
 Voila! You are now ready to configure your AWS  Profile using the Secret Key and Secret Access ID.
+
+Interested in the next step [configuring AWS profile?](https://jningtho.github.io/aws/awscli/aws-cli-operations/)
