@@ -6,6 +6,8 @@ categories: aws awscli
 ---
 #### Interested in checking out [Installing](https://jningtho.github.io/aws/walkthrough-aws-cli-tool/) `awscli`*
 
+<img src="/assets/img/aws-shell.png">
+
 So I have installed `awscli` tool on my macbook or ubuntu. Now what? Where do I go from here. If you've reached this far I'd be wrong to say that you have not created a [FREE TIER](https://aws.amazon.com/free/) account in AWS and are anxious to hop on the bandwagon. Say no more!
 
 ### Checklist
