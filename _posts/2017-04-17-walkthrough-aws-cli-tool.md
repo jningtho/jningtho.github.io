@@ -7,7 +7,7 @@ categories: aws
 tags: aws cli awscli
 ---
 
-<img src="/assets/img/awscli.png">
+<img src="/assets/img/awscli.jpg">
 
 In this post, I will walk through installing `awscli` a command line tool to interact with the AWS Services in your account. The installation guide in [AWS cli documentation](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) is very elaborate however I'll take the direct approach with the installation steps on macOS and Linux machines(ubuntu).
 
