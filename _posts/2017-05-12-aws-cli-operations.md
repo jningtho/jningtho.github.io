@@ -2,7 +2,8 @@
 layout: post
 title:  "AWS CLI Operations"
 date:   2017-04-22 17:12:08 +0530
-categories: aws awscli
+categories: aws
+tags: aws cli awscli
 ---
 #### Interested in checking out [Installing](https://jningtho.github.io/aws/walkthrough-aws-cli-tool/) `awscli`*
 
