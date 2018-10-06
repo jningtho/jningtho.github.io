@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title:  "Getting started with Docker"
+title:  "Getting started with Docker Container"
 date:   2017-08-24 13:12:08 +0530
 categories: docker
 tags: docker container microservice
@@ -26,7 +26,11 @@ Containerization is increasingly becoming popular for the following reasons:
 
 Source: [Docker Docs](https://docs.docker.com/get-started/#docker-concepts)
 
-The primary goal of this article is to walk you step-by-step in installing Docker 'engine' on a Linux/macOS, run a container and manage it's life Cycle. I will also walk you through some of the basic administrative tasks and get you setup to embark upon the DevOps journey.
+Some of the other widely adopted Container platforms are:
+* Red Hat's [CoreOs](https://coreos.com/os/docs/latest/) and it's [Roadmap](https://www.redhat.com/en/about/press-releases/red-hat-unveils-roadmap-coreos-integration-red-hat-openshift)
+* Linux [LXC Containers](https://linuxcontainers.org/lxc/introduction/)
+
+The primary goal of this article is to walk you step-by-step in installing Docker 'engine' on a Linux/macOS, run a container and manage it's life Cycle. I will also walk you through some of the basic administrative tasks and get you setup to embark upon one of the stepping stones to the DevOps journey.
 
 
 
