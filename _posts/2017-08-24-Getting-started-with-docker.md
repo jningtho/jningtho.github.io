@@ -30,7 +30,30 @@ Some of the other widely adopted Container platforms are:
 * Red Hat's [CoreOs](https://coreos.com/os/docs/latest/) and it's [Roadmap](https://www.redhat.com/en/about/press-releases/red-hat-unveils-roadmap-coreos-integration-red-hat-openshift)
 * Linux [LXC Containers](https://linuxcontainers.org/lxc/introduction/)
 
-The primary goal of this article is to walk you step-by-step in installing Docker 'engine' on a Linux/macOS, run a container and manage it's life Cycle. I will also walk you through some of the basic administrative tasks and get you setup to embark upon one of the stepping stones to the DevOps journey.
+The primary goal of this article is to walk you step-by-step in installing Docker CE 'engine' on a Linux/macOS, run a container and manage it's life Cycle. I will also walk you through some of the basic administrative tasks and get you setup to embark upon one of the stepping stones to the DevOps journey.
+
+For *macOS* Installation, please refer to the Docker's official step-by-step [Documentation](https://docs.docker.com/docker-for-mac/install/) along with the minimum system requirements for optimum and seamless performance. Once you have the installation successfully completed, you should be able to open your terminal land run few commands to validate.
+
+```shell
+$ docker --version
+Docker version 18.06.1-ce, build 6a1727d
+#=> you should have this output above
+```
+
+```shell
+$ docker info
+#=> output should give you the same version of both Server and Client
+```
+
+Please Note! I shall running most of the commands on a Linux Ubuntu
+#### Linux Install and Operation
+> Environment
+> Platform: AWS
+> OS: Ubuntu 18.04/Bionic Beaver
+> Kernel: 4.15.0-1023-aws
+
+
+
 
 
 
