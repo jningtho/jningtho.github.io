@@ -46,11 +46,60 @@ $ docker info
 ```
 
 Please Note! I shall running most of the commands on a Linux Ubuntu
+
 #### Linux Install and Operation
-> Environment
-> Platform: AWS
-> OS: Ubuntu 18.04/Bionic Beaver
-> Kernel: 4.15.0-1023-aws
+* Environment
+* Platform: AWS
+* OS: Ubuntu 18.04/Bionic Beaver - Clean Install
+* Kernel: 4.15.0-1023-aws
+
+1. Login to Ubuntu 18.04 on AWS
+- run
+
+2. Install Docker following the official [documentation](https://docs.docker.com/install/linux/docker-ce/ubuntu/#upgrade-docker-ce). This is pretty self explanatory.
+
+* SET UP THE REPOSITORY
+
+- Update the apt package index:
+
+```shell
+$ sudo apt update
+```
+
+- Install packages to allow apt to use a repository over HTTPS:
+```shell
+$ sudo apt install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+```
+
+- Add Docker's official GPG key:
+```shell
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+
+- Install docker by adding the repository as below
+```shell
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+```
+
+- Finally run the Installation
+```shell
+$ sudo apt install docker-ce
+```
+
+Validate Installation
+```shell
+ubuntu@ip-172-31-88-136:~$ docker --version
+Docker version 18.06.1-ce, build e68fc7a #=>output
+```
+
+Running `$ docker info` immediately post installation will error out with the following error
+```shell
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.26/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
+```
 
 
 
