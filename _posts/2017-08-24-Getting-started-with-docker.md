@@ -199,27 +199,36 @@ CONTAINER ID     IMAGE               COMMAND                  CREATED          S
 ```
 
 Basic commands you may start with
-`
-## List Docker CLI commands
+
+1. List Docker CLI commands
+```shell
 docker
 docker container --help
+```
 
-## Display Docker version and info
+2. Display Docker version and info
+```shell
 docker --version
 docker version
 docker info
+```
 
-## Execute Docker image
+3. Execute Docker image
+```shell
 docker run hello-world
+```
 
-## List Docker images
+4. List Docker images
+```shell
 docker image ls
+```
 
-## List Docker containers (running, all, all in quiet mode)
+5. List Docker containers (running, all, all in quiet mode)
+```shell
 docker container ls
 docker container ls --all
 docker container ls -aq
-`
+```
 
 We should be good to proceed to the next step of managing Docker containers and it's lifecycle.
 
