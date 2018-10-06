@@ -175,7 +175,8 @@ Insecure Registries:
  127.0.0.0/8
 Live Restore Enabled: false
 ```
-Please make sure to go through the description of [Docker Architecture]() for the details in the output.
+My output shows this node as a Leader since I have created a Cluster [SWARM](https://docs.docker.com/network/network-tutorial-standalone/) of 3 nodes with the NodeID as:`ixk83ma2zamtt3e36xhl80lul` and ClusterID as:`klcfjsxkvfd5osgymoydiimw7`. These details would be missing at your output.
+Please make sure to go through the [Docker Overview](https://docs.docker.com/engine/docker-overview/) for the underlying technologies.
 
 We are now set to pull an image from dockerhub and run our first container.
 
