@@ -105,6 +105,7 @@ From what I can tell, 'docker' group is automatically created with the installat
 ```shell
 $ sudo usermod -a -G docker $USER
 $ sudo systemctl restart docker
+- Logout and log back in
 ```
 ```shell
 $ docker info
